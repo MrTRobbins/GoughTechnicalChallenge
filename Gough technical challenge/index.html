@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8">
+ 
+<!--  Viewport meta tag needed to control layout for different devices. -->
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company website</title>
+
+<!--  Links to bootstrap extension and stylesheet. -->
+      
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet">
+
+  </head>
+    
+  <body>
+
+<!--   Create Nav bar -->
+    
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/gough-logo.png" class="logo"></a>
+                <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            
+            </div>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href=#><span class="navbarhoverspan" id="jQueryToggleButton" >What we do</span></a></li>
+                    <li><a href=#><span class="navbarhoverspan">our story</span></a></li>
+                    <li><a href=#><span class="navbarhoverspan">news</span></a></li>
+                    <li><a href=#><span class="navbarhoverspan">Contact</span></a></li>
+                    <li><a href=#><span class="donatebutton">Donate</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<!--   BANNER IMAGE -->
+    
+    <div class="jumbotron">
+        <div class="container-fluid jumbocontainer">
+            <img src="images/banner-image.png">
+        </div>
+    </div>
+    
+<!-- HEADINGS section -->
+    
+    <div class="container-fluid" id="headingsectioncontainer">
+       <div class="floatingcontainer container" id="generalSectionToHide2">
+        <div class="generalheading whitebackground">
+            <h1> General Heading </h1>
+            <p>Normal opening hours:</p>
+            <p>Monday to Friday 08:00 until 4:00pm</p>
+            <p>Saturday 9:00am until 7:00pm</p>
+            <p>Sunday Closed</p>
+        </div>
+        <div class="whitebackground loremipsum">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+            <div class="row">
+                    <div class="col-sm-4 whitebackground firstchild1">
+                        <h2> Section Title</h2>
+                        <p>Lorem iosum dolor sit amet, consectetur adipisicing..</p>
+                    </div>
+                    <div class="col-sm-4 whitebackground">
+                        <h2> Section Title</h2>
+                        <p>Lorem iosum dolor sit amet, consectetur adipisicing..</p>
+                    </div>
+                    <div class="col-sm-4 whitebackground">
+                        <h2>Section Title</h2>
+                        <p>Lorem iosum dolor sit amet, consectetur adipisicing..</p>
+                    </div>
+                </div>   
+            <div class="row">
+                    <div class="col-sm-4 whitebackground firstchild1">
+                        <h2> Section Title</h2>
+                        <p>Lorem iosum dolor sit amet, consectetur adipisicing..</p>
+                    </div>
+                    <div class="col-sm-4 whitebackground">
+                        <h2> Section Title</h2>
+                        <p>Lorem iosum dolor sit amet, consectetur adipisicing..</p>
+                    </div>
+                    <div class="col-sm-4 whitebackground">
+                        <h2>Section Title</h2>
+                        <p>Lorem iosum dolor sit amet, consectetur adipisicing..</p>
+                    </div>
+            </div>  
+        </div>
+
+    <!--    Right aligned nav bar -->
+
+        <div class="inpagenavbar whitebackground" id="generalSectionToHide1">
+            <a href="#"> What we do</a>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+            <a href="#"> Our Story</a>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+            <a href="#"> News</a>
+            <p></p>
+            <a href="#"> Contact</a>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Lorem Ipsum</li>
+                </ul>
+        </div>
+    </div>
+
+<!-- MAP IMAGE AND OVERLAPPING ITEMS    -->
+    
+    <div class="container positionmaniprelativ">
+        <div class="mapimgdiv">
+            <img src="images/map-background.png">
+        </div>
+        <div class="positionmanipdiv">
+            <h1> Banner Heading</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Repellat culpa libero iure, architecto soluta dolerem inventore</p>
+            <p>CALL US ON 01527 579555</p>
+            <button class="btn btn-default">Contact Page</button>
+        </div>
+    </div>
+    
+<!-- BOTTOM BORDER UNDER MAP    -->
+
+    <div CLASS="btmborderundmap">
+        <p>gough bailey wright, lorem ipsum dolor sit amet</p>
+    </div>    
+    
+<!--FOOTER -->
+
+    <footer class = "footer page-footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">How to find us</a></li>
+            </ul>
+            <p>Gough Bailey Wright</p>
+            <p>St John's House, 16 Church Street, Bromsgrove, Worcestershire, B61 7JH</p>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+      
+<script>
+
+/* You can resize and refresh the browser and this function will update element sizing - Wanted to demonstrate some jQuery rather than using @media */
+    
+$(function(){
+    
+    var windowWidth = ($(window).width());
+    
+    
+    $(function(){
+        
+        /* window break points used: 
+        phones: <740 px => The collapsible nav bar kicks in at this width, normally recommended to use 768.
+        Ipads:  740px - 1224px,
+        Monitors: 1224px+;
+        */
+
+        if(windowWidth<740){
+
+        /* the collapsable toggle becomes active at small device size but the drop down is not very visible because currently transparent background and no border. */
+ 
+            
+            $("#navbarCollapse").on("show.bs.collapse", function(){  
+            $(".navbar-default .navbar-collapse").css({"background-color" : "rgb(244, 244, 244)", "border" : "1px solid rgb(220, 220, 220)", "margin-top": "12px"});
+            });
+
+            $(".navbar-header .logo").css("margin-left", 0);
+
+        /* GENERAL HEADING section for small devices - 
+        the 'section titles' that are 3 accross in other devices will sit one under the other at this screen size so the 6px margin left needs to be removed.
+
+        The right nav bar does not have enough room to comfortably float right. So make this float left so it will sit under other heading items. adjust size of this so that all of this section is the same width.
+
+        The margins of the containing div for this section should be removed at this screen size. 
+        */
+
+            $("#headingsectioncontainer").css("margin", "0px 0px"); 
+
+            $("#headingsectioncontainer .row .col-sm-4").css("margin-left", 0);
+
+            $("#headingsectioncontainer .inpagenavbar").css({"float" : "left", "margin" : "20px 0px 20px 0px"});
+
+            $("#headingsectioncontainer .row .col-sm-4, .inpagenavbar, .loremipsum, .generalheading").css("width", windowWidth*0.9);
+
+    /* MAP IMG section- reduce size of the containing text and button at thsi screen size. 
+    */
+
+
+            $(".positionmanipdiv h1").css("font-size", "25px");
+            $(".positionmanipdiv p").css("font-size", "12px");
+            $(".positionmanipdiv button").css("padding", "3px 10px");
+
+            $(".positionmanipdiv button").hover(function(){
+                $(this).css({"padding": "3px 10px", "font-weight": "200"});
+            });
+
+
+
+    /* footer changes for this screen size*/
+
+            $(".footer ul li").css({"padding-right": "10px", "font-size" : "12px"});
+            $(".footer").css("padding-left", "15px");
+
+
+
+        }else if(windowWidth<1224){
+
+    /* adjucting nav bar sizing for med devices */
+
+            $(".nav li:last-child").css("margin-right", 0);
+            $(".navbar-header .logo").css("margin-left", 0);
+            $("#navbarCollapse .nav li a").css({"font-size": "12px", "margin-right" : "4px"});
+
+
+
+    /* adjusting GENERAL HEADING section 
+
+        All of the elements in this section are in a containing div #headingsectioncontainer to provide margins in large screen size - not needed at this screen size. 
+        Sizing of items in this section is based off of the container size rather than screen size.  
+
+    */
+
+            $("#headingsectioncontainer").css("margin", "0px 0px");       
+
+            var headingSectContWidth = $("#headingsectioncontainer").width();
+
+
+
+            $("#headingsectioncontainer .floatingcontainer").css("width", headingSectContWidth*0.7)
+            $(".generalheading").css("width", headingSectContWidth * 0.7);
+            $("#headingsectioncontainer .row .col-sm-4").css("width", (((headingSectContWidth*0.7)-12)/3));
+            $(".inpagenavbar").css("width", (headingSectContWidth*0.25));  
+            $(".loremipsum").css("width", headingSectContWidth*0.7)
+
+        }else{
+
+           var headingSectContWidth = $("#headingsectioncontainer").width();
+
+     /*   below: updating widths of items in the Headings section. Same code as above -> repeated because wanted different sizing for small screens - not as efficient but wanted to keep the small-med-large screen code structure. */
+
+            $("#headingsectioncontainer .floatingcontainer").css("width", headingSectContWidth*0.70)
+            $(".generalheading").css("width", headingSectContWidth*0.70);
+            $("#headingsectioncontainer .row .col-sm-4").css("width", (((headingSectContWidth*0.70)-12)/3));
+            $(".inpagenavbar").css("width", (headingSectContWidth*0.25));  
+            $(".loremipsum").css("width", headingSectContWidth*0.70);
+
+        };   
+});
+
+    /* ensuring that the absolutely positioned element sits in the center of its parent: Not interested in screen break points for this so sits outside above function */
+    
+    $(function(){
+        var y = ($(".positionmanipdiv").width());
+        var z = ($(".positionmaniprelativ").width());
+        
+        $(".positionmanipdiv").css("left", (z-y)/2);
+    });
+                                    
+});
+
+    
+</script>    
+
+</body>
+</html>
